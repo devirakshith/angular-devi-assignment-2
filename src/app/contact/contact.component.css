@@ -1,0 +1,15 @@
+span {
+	background-color: aqua;
+	color: white;
+}
+
+p {
+	text-align: center;
+	line-height: 100px;
+}
+
+div{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	align-content: center;
+}

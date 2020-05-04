@@ -1,4 +1,21 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<style>
+  li.styles {
+    background-color: greenyellow;
+    font-weight: bold;
+}  
+</style>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Assignment 2</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="styles" [routerLinkActiveOptions]="{exact:true}"><a href="#" routerLink="/home">HOME</a></li>
+      <li routerLinkActive="styles" [routerLinkActiveOptions]="{exact:true}"><a href="#" routerLink="/projects">PROJECTS</a></li>
+      <li routerLinkActive="styles" [routerLinkActiveOptions]="{exact:true}"><a href="#" routerLink="/services">SERVICES</a></li>
+      <li routerLinkActive="styles" [routerLinkActiveOptions]="{exact:true}"><a href="#" routerLink="/contact">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
